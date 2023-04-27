@@ -1,0 +1,136 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background: linear-gradient(rgba(108, 89, 118, 0.45), rgba(192, 125, 135, 0.529));
+    background-attachment: fixed;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 4rem;
+}
+.contenedor {
+    background-color: rgb(78, 79, 119);
+    width: fit-content;
+    margin: 25px auto;
+    padding: 25px;
+    border-radius: 35px;
+}
+
+.contenedor legend {
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.contenedor fieldset {
+    border: none;
+}
+
+.ordenar{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+
+}
+
+.campos {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    margin-top: 10px;   
+    color: white;
+ 
+}
+
+.etiqueta {
+    color: transparent;
+}
+
+.input-text {
+    background-color: black;
+    border: solid;
+    border-width: 1px;
+    margin-top: 5px;
+    border-radius: 3px;
+    font-size: 20px;
+    color: white;
+    size-adjust: auto;
+}
+
+.input-text select {
+    border: none;
+}
+
+.boton {
+    width: 50%;
+    margin-top: 10px;
+    margin-left: 60px;
+    padding: 5px 10px;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: aqua;
+}
+.boton:hover {
+    cursor: pointer;
+    background-color: aquamarine;
+}
+
+.alinear-boton {
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-size: 20px;
+}
+
+footer{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+@media (max-width:626px){
+    .contenedor{
+        width: auto;
+    }
+    .ordenar{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+        align-items: center;
+        column-gap: 20px;
+    }
+    .alinear-boton {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+}
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/estilos/styles.css">
+    <title>Temperaturas</title>
+</head>
+<body>  
+    <h1>Temperaturas</h1>    
+    <form class="contenedor">
+        <fieldset>
+            <legend>Conversiones</legend>
+            <div class="ordenar">     
+                <div class = "campos">
+                    <label for="">Grados</label>
+                    <input class="input-text" type="number" name="" id="numberOne">
+                </div>
+    
+                <div class = "campos etiqueta">
+                    <label for="">Down</label>
+                    <select class="input-text" name="" id="ListBox1">
+                        <option disabled selected value="1">--Elije una opción--</option>
+                        <option value="2">Celcius-Fahrenheit</option>
+                        <option value="3">Fahrenheit-Celcius</option>
+                        <option value="4">Celcius-Kelvin</option>
+                        <option value="5">Kelvin-Celcius</option>
+                        <option value="6">Kelvin-Fahrenheit</option>
+                        <option value="7">Fahrenheit-Kelvin</option>
+                    </select>
+                </div>
+                
+                    
+                
+    
+                <div class = "campos">
+                    <label for="">Resultado</label>
+                    <output id = "resultado" class="input-text" for="">Conversion</output>
+                </div>
+
+                <div class = "etiqueta alinear-boton">
+                    <label for="">Down</label>
+                    <input class = "boton"  onclick="operacionFcn()" type="button" value="Calcular">
+                </div>
+    
+            </div>            
+            
+        </fieldset>
+    </form>
+    
+    <script src="/app/operaciones.js"></script>
+    <footer>
+        Derechos reservadors ©Bryan Fernandez
+    </footer>
+</body>
+</html>
